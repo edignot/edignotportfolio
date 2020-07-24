@@ -1,15 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Nav from "../components/nav"
+import "../css/index.css"
 
 const Index = () => (
-  <Layout>
-    <SEO title="about" />
-      {/* <Image /> */}
-    <Link to="/projects/">PROJECTS</Link>
-  </Layout>
+  <section className="home">
+    <SEO title="home" />
+    <h1>Hi, my mane is Edita</h1>
+    <Nav position="center-nav" />
+  </section>
 )
 
 export default Index

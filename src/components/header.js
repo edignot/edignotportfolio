@@ -1,11 +1,13 @@
 import { Link } from "gatsby"
 import React from "react"
+import Nav from "./nav"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
+    <h1>
+      <Link to="/">LOGO</Link>
+    </h1>
+    <Nav position="top-nav" />
   </header>
 )
 
