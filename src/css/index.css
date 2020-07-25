@@ -15,3 +15,18 @@ body {
 .project-container {
   background-color: lightgray;
 }
+
+/* HEADER */
+header {
+  height: 40vh;
+  background-color: grey;
+}
+
+.nav-bar {
+  border: 2px red solid;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px;
+}

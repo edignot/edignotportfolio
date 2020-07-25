@@ -4,10 +4,11 @@ import Nav from "./nav"
 
 const Header = () => (
   <header>
-    <h1>
+    <div className="nav-bar">
       <Link to="/">LOGO</Link>
-    </h1>
-    <Nav position="top-nav" />
+      <Nav position="top-nav" />
+    </div>
+    <h1>PROJECTS</h1>
   </header>
 )
 
