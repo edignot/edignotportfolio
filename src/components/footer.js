@@ -13,23 +13,26 @@ const Footer = ({ siteTitle }) => (
   <footer>
     <section className="footer-icons">
       <a href="https://github.com/edignot">
-        <FaGithubSquare />
+        <FaGithubSquare className="footer-icon" />
       </a>
       <a href="https://www.linkedin.com/feed/">
-        <FaLinkedin />
+        <FaLinkedin className="footer-icon" />
       </a>
       <a href="https://twitter.com/EditaIgnot">
-        <FaTwitterSquare />
+        <FaTwitterSquare className="footer-icon" />
       </a>
       <a href="mailto:edignot@gmail.com">
-        <MdMail />
+        <MdMail className="footer-icon" />
       </a>
       <a href="https://editaignot.com/">
-        <FaCamera />
+      <FaCamera className="footer-icon" />
       </a>
     </section>
     <p>
-      <Link to="/">{siteTitle}</Link>© {new Date().getFullYear()}
+      <Link to="/" className="footer-link">
+        {siteTitle}
+      </Link>
+      © {new Date().getFullYear()}
     </p>
   </footer>
 )
