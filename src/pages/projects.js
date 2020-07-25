@@ -30,7 +30,9 @@ const Projects = () => {
         <h2>I enjoy turning problems into simple and intuitive designs.</h2>
         <p>
           Here's a selection of some recent projects. You can find more on{" "}
-          <a href="https://github.com/edignot">GitHub</a>
+          <a href="https://github.com/edignot" target="_blank">
+            GitHub
+          </a>
         </p>
       </section>
       <ProjectContainer />

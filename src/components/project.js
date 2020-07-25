@@ -2,12 +2,35 @@ import React from "react"
 import Img from "gatsby-image"
 
 const Project = props => {
-  const { deployed, github, img, title, tech, id, description } = props.project
-  console.log(props.project)
+  const {
+    deployed,
+    github,
+    img,
+    title,
+    tech,
+    description,
+    order,
+  } = props.project
+
+  const techs = tech.tech.map(t => <p>{t}</p>)
+
   return (
-    <article className="project" id={id}>
-      <h2>{title}</h2>
-      <p>{description.description}</p>
+    <article className="project" id={order}>
+      <div className="project-info-container">
+        <h2 className="project-title">{title}</h2>
+        <p className="project-description">{description.description}</p>
+      </div>
+
+      <div className="project-techs-container">{techs}</div>
+
+      <div className="project-links">
+        <a href={github} target="_blank">
+          <button>code</button>
+        </a>
+        <a href={deployed} target="_blank">
+          <button>visit</button>
+        </a>
+      </div>
       <Img fluid={img.fluid} className="project-img" />
     </article>
   )

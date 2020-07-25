@@ -22,6 +22,7 @@ const ProjectContainer = () => {
           description {
             description
           }
+          order
         }
       }
     }
