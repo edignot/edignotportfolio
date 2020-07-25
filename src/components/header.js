@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav"
 import Img from "gatsby-image"
 
-const Header = () => {
+const Header = ({ title, role }) => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "working.png" }) {
@@ -29,7 +29,8 @@ const Header = () => {
         <Nav position="top-nav" />
       </div>
       <div className="page-title-container">
-        <h1 className="page-title">PROJECTS</h1>
+        <h1 className="page-title">{title}</h1>
+        <p className="page-role">{role}</p>
       </div>
     </header>
   )

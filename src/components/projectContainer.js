@@ -19,8 +19,8 @@ const ProjectContainer = () => {
           tech {
             tech
           }
-          description {
-            description
+          project {
+            project
           }
           order
         }

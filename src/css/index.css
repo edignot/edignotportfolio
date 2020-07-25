@@ -16,6 +16,7 @@
 
 /* ------------------------------------------------------- */
 /* ALL */
+/* ------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -37,9 +38,40 @@ body {
   color: var(--font-dark);
 }
 
-.project-container {
+.project-container,
+.about-container {
   background-color: var(--background-light);
+  height: auto;
+  min-height: 20vh;
 }
+/* ------------------------------------------------------- */
+/* ANIMATED BACKGROUNDS */
+/* ------------------------------------------------------- */
+
+header,
+.home {
+  background: linear-gradient(
+    -45deg,
+    var(--accent-medium),
+    var(--background-medium),
+    var(--accent-light)
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* ------------------------------------------------------- */
 /* HEADER */
 /* ------------------------------------------------------- */
@@ -88,20 +120,32 @@ header {
 
 .page-title-container {
   display: flex;
+  flex-direction: column;
   min-height: 160px;
 }
 
-.page-title {
+.page-title,
+.page-role {
   text-align: center;
+  font-weight: 300;
+  color: var(--font-light);
+}
+
+.page-title {
   font-size: 4rem;
   margin: auto;
+}
+
+.page-role {
+  font-size: 1.4rem;
 }
 
 /* ------------------------------------------------------- */
 /* INTRO */
 /* ------------------------------------------------------- */
 
-.projects-intro {
+.projects-intro,
+.about-intro {
   height: auto;
   min-height: 40vh;
   display: flex;
@@ -111,7 +155,8 @@ header {
   padding: 50px;
 }
 
-.projects-intro p a {
+.projects-intro p a,
+.about-intro p a {
   color: var(--accent-medium);
   font-weight: 400;
   text-decoration: none;
@@ -119,18 +164,22 @@ header {
 }
 
 .projects-intro h2,
-.projects-intro p {
+.projects-intro p,
+.about-intro h2,
+.about-intro p {
   text-align: center;
 }
 
-.projects-intro h2 {
+.projects-intro h2,
+.about-intro h2 {
   font-size: 2rem;
   padding-top: 30px;
   color: var(--accent-medium);
 }
 
 .projects-intro h2:after,
-.project-title:after {
+.project-title:after,
+.about-intro h2:after {
   content: " ";
   display: block;
   height: 2px;
@@ -139,11 +188,13 @@ header {
   width: 150px;
 }
 
-.projects-intro p {
+.projects-intro p,
+.about-intro p {
   font-size: 1.2rem;
 }
 
-.project-working-img {
+.project-working-img,
+.about-working-img {
   width: 120px;
   margin: auto;
   filter: grayscale(100);
@@ -193,14 +244,16 @@ header {
   margin: auto;
 }
 
-.project-techs-container {
+.project-techs-container,
+.skills {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
   margin: 10px auto;
 }
 
-.project-techs-container p {
+.project-techs-container p,
+.skills p {
   padding: 5px 15px;
   background-color: var(--accent-light);
   margin: 7px;

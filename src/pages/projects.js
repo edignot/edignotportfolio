@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ProjectContainer from "../components/projectContainer"
 import SEO from "../components/seo"
@@ -20,7 +19,7 @@ const Projects = () => {
   `)
 
   return (
-    <Layout>
+    <Layout title="PROJECTS">
       <SEO title="projects" />
       <section className="projects-intro">
         <div>
