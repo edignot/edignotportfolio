@@ -19,18 +19,17 @@ const Project = props => {
       <div className="project-info-container">
         <h2 className="project-title">{title}</h2>
         <p className="project-description">{description.description}</p>
+        <div className="project-techs-container">{techs}</div>
+        <div className="project-links">
+          <a href={github} target="_blank">
+            code
+          </a>
+          <a href={deployed} target="_blank">
+            visit
+          </a>
+        </div>
       </div>
 
-      <div className="project-techs-container">{techs}</div>
-
-      <div className="project-links">
-        <a href={github} target="_blank">
-          <button>code</button>
-        </a>
-        <a href={deployed} target="_blank">
-          <button>visit</button>
-        </a>
-      </div>
       <Img fluid={img.fluid} className="project-img" />
     </article>
   )

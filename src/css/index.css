@@ -9,7 +9,7 @@
   --background-medium: #b3b3b3;
   --background-dark: #6d6d6d;
   --background-black: #202020;
-  --accent-light: #3d638d;
+  --accent-light: #92a7be;
   --accent-medium: #0e3c70;
   --accent-dark: #001936;
 }
@@ -34,6 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-white);
+  color: var(--font-dark);
 }
 
 .project-container {
@@ -122,6 +123,7 @@ header {
 .projects-intro h2 {
   font-size: 2rem;
   padding-top: 30px;
+  color: var(--accent-medium);
 }
 
 .projects-intro h2:after,
@@ -147,7 +149,12 @@ header {
 /* PROJECTS */
 /* ------------------------------------------------------- */
 
-.project-container {
+.project {
+  height: auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #second {
@@ -156,14 +163,6 @@ header {
 
 #first {
   background-color: var(--background-white);
-}
-
-.project {
-  height: auto;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .project-img {
@@ -179,12 +178,29 @@ header {
 .project-title {
   font-size: 2rem;
   text-align: center;
+  color: var(--accent-medium);
 }
 
 .project-description {
   width: 50%;
   font-size: 1.2rem;
   margin: auto;
+}
+
+.project-techs-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.project-techs-container p {
+  padding: 5px 15px;
+  background-color: var(--accent-light);
+  margin: 7px;
+  border-radius: 7px;
+  color: var(--font-light);
+  font-weight: 400;
 }
 
 .project-links {
@@ -194,9 +210,19 @@ header {
   justify-content: space-between;
 }
 
-.project-techs-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  margin: 0 auto;
+.project-links a {
+  cursor: pointer;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 7px;
+  border: 1px solid var(--accent-medium);
+  color: var(--accent-medium);
+}
+
+.project-links a:hover {
+  color: var(--font-light);
+  border: 1px solid var(--font-light);
+  background-color: var(--accent-medium);
+  transition: color 0.5s, border 0.5s, background-color 0.5s;
 }
