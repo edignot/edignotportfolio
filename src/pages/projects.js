@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo.png" }) {
+      file(relativePath: { eq: "working.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -24,7 +24,10 @@ const Projects = () => {
       <SEO title="projects" />
       <section className="projects-intro">
         <div>
-          <Img fluid={data.file.childImageSharp.fluid} className="intro-img" />
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            className="project-working-img"
+          />
         </div>
 
         <h2>I enjoy turning problems into simple and intuitive designs.</h2>

@@ -61,9 +61,12 @@ header {
   align-items: center;
 }
 
-.logo {
+.working-img {
   height: 60px;
   width: 60px;
+  filter: grayscale(100);
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
 .top-nav {
@@ -140,9 +143,12 @@ header {
   font-size: 1.2rem;
 }
 
-.intro-img {
+.project-working-img {
   width: 120px;
   margin: auto;
+  filter: grayscale(100);
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
 /* ------------------------------------------------------- */

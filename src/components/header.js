@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo.png" }) {
+      file(relativePath: { eq: "working.png" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
@@ -21,7 +21,10 @@ const Header = () => {
     <header>
       <div className="nav-bar">
         <Link to="/">
-          <Img fluid={data.file.childImageSharp.fluid} className="logo" />
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            className="working-img"
+          />
         </Link>
         <Nav position="top-nav" />
       </div>
