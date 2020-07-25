@@ -19,6 +19,9 @@ const ProjectContainer = () => {
           tech {
             tech
           }
+          description {
+            description
+          }
         }
       }
     }
@@ -29,15 +32,10 @@ const ProjectContainer = () => {
   } = data
 
   const projects = nodes.map(project => {
-    return <Project project={project} />
+    return <Project project={project} key={project.id} />
   })
 
-  return (
-    <section className="project-container">
-      <h1>PROJECTS CONTAINER</h1>
-      {projects}
-    </section>
-  )
+  return <section className="project-container">{projects}</section>
 }
 
 export default ProjectContainer

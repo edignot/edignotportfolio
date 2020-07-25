@@ -13,7 +13,13 @@
 
 /* ------------------------------------------------------- */
 /* ALL */
-/* ------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -33,8 +39,13 @@ body {
 /* HEADER */
 /* ------------------------------------------------------- */
 header {
-  height: 40vh;
+  height: auto;
+  min-height: 40vh;
   background-color: var(--background-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .nav-bar {
@@ -42,7 +53,6 @@ header {
   width: 50%;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 25px;
   align-items: center;
 }
 
@@ -68,8 +78,59 @@ header {
   transition: border-bottom 0.3s;
 }
 
+.page-title-container {
+  display: flex;
+  min-height: 160px;
+}
+
 .page-title {
   text-align: center;
-  font-weight: 100;
   font-size: 4rem;
+  margin: auto;
+}
+
+/* ------------------------------------------------------- */
+/* INTRO */
+/* ------------------------------------------------------- */
+
+.projects-intro {
+  height: auto;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.projects-intro h2,
+.projects-intro p {
+  text-align: center;
+}
+
+.intro-img {
+  width: 120px;
+  margin: auto;
+}
+
+/* ------------------------------------------------------- */
+/* PROJECTS */
+/* ------------------------------------------------------- */
+
+.project-container {
+  border: 2px solid yellow;
+}
+
+.project {
+  border: 1px solid blue;
+  height: auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-img {
+  width: 70%;
+  margin: 0 auto;
 }

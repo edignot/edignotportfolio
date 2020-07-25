@@ -25,7 +25,9 @@ const Header = () => {
         </Link>
         <Nav position="top-nav" />
       </div>
-      <h1 className="page-title">PROJECTS</h1>
+      <div className="page-title-container">
+        <h1 className="page-title">PROJECTS</h1>
+      </div>
     </header>
   )
 }

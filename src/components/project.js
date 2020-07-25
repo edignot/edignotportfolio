@@ -2,11 +2,13 @@ import React from "react"
 import Img from "gatsby-image"
 
 const Project = props => {
-  const { deployed, github, img, title, tech } = props.project
+  const { deployed, github, img, title, tech, id, description } = props.project
+  console.log(props.project)
   return (
-    <article className="project">
-      <h2>{deployed}</h2>
-      <Img fluid={img.fluid} />
+    <article className="project" id={id}>
+      <h2>{title}</h2>
+      <p>{description.description}</p>
+      <Img fluid={img.fluid} className="project-img" />
     </article>
   )
 }
