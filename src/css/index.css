@@ -270,7 +270,7 @@ header {
   padding: 5px 15px;
   background-color: var(--accent-light);
   margin: 7px;
-  border-radius: 7px;
+  border-radius: 5px;
   color: var(--font-light);
   font-weight: 400;
   font-size: 1.2rem;
@@ -288,7 +288,7 @@ header {
   font-size: 1.4rem;
   text-decoration: none;
   padding: 5px 30px;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 1px solid var(--accent-medium);
   color: var(--accent-medium);
 }
@@ -342,6 +342,55 @@ footer p,
 }
 
 /* ------------------------------------------------------- */
+/* PARTICLES ANIMATION */
+/* ------------------------------------------------------- */
+.particles-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+}
+
+.home {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-nav {
+  width: 90%;
+  height: 50%;
+  top: 25%;
+  margin: 0 5%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.center-nav-item {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--accent-medium);
+  border: 1px solid var(--accent-medium);
+  border-radius: 5px;
+  padding: 20px 10px;
+  width: 40%;
+  text-align: center;
+  background: var(--background-light);
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.center-nav-item:nth-child(2) {
+  margin-left: 50px;
+}
+
+/* ------------------------------------------------------- */
 /* MEDIA QUERIES */
 /* ------------------------------------------------------- */
 
@@ -380,6 +429,10 @@ footer p,
   .project-links a {
     font-size: 2rem;
   }
+  .center-nav-item {
+    font-size: 2rem;
+    width: 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -415,6 +468,9 @@ footer p,
   }
   .project-links {
     width: 30%;
+  }
+  .center-nav-item {
+    width: 20%;
   }
 }
 
