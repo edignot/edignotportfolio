@@ -37,7 +37,7 @@ const AboutContainer = () => {
   return (
     <section className="about-container">
       <article className="about-me-container">
-        <p>{aboutme}</p>
+        <p className="about-me-description">{aboutme}</p>
       </article>
       <article className="skills">{techs}</article>
     </section>

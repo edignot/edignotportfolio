@@ -42,7 +42,7 @@ body {
 .about-container {
   background-color: var(--background-light);
   height: auto;
-  min-height: 20vh;
+  min-height: 50vh;
 }
 /* ------------------------------------------------------- */
 /* ANIMATED BACKGROUNDS */
@@ -87,7 +87,8 @@ header {
 
 .nav-bar {
   display: flex;
-  width: 50%;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -106,16 +107,20 @@ header {
 }
 
 .top-nav-item {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--font-light);
-  margin-left: 50px;
   border: 2px solid transparent;
 }
 
+.top-nav-item:nth-child(2) {
+  margin-left: 50px;
+}
+
 .top-nav-item:hover {
-  border-bottom: 2px solid var(--font-light);
-  transition: border-bottom 0.3s;
+  font-weight: 300;
+  font-size: 1.7rem;
+  transition: font-weight 0.1s, font-size 0.3s;
 }
 
 .page-title-container {
@@ -132,12 +137,12 @@ header {
 }
 
 .page-title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: auto;
 }
 
 .page-role {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* ------------------------------------------------------- */
@@ -189,7 +194,9 @@ header {
 }
 
 .projects-intro p,
-.about-intro p {
+.about-intro p,
+.projects-intro p a,
+.about-intro p a {
   font-size: 1.2rem;
 }
 
@@ -205,6 +212,15 @@ header {
 /* ------------------------------------------------------- */
 /* PROJECTS */
 /* ------------------------------------------------------- */
+.project-info-container,
+.about-container {
+  padding: 50px 50px 0px 50px;
+  margin: 0 auto;
+}
+
+.about-container {
+  padding-bottom: 50px;
+}
 
 .project {
   height: auto;
@@ -223,12 +239,7 @@ header {
 }
 
 .project-img {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.project-info-container {
-  padding: 50px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -238,8 +249,9 @@ header {
   color: var(--accent-medium);
 }
 
-.project-description {
-  width: 50%;
+.project-description,
+.about-me-description {
+  width: 100%;
   font-size: 1.2rem;
   margin: auto;
 }
@@ -248,8 +260,9 @@ header {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   margin: 10px auto;
+  justify-content: center;
 }
 
 .project-techs-container p,
@@ -260,18 +273,19 @@ header {
   border-radius: 7px;
   color: var(--font-light);
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .project-links {
   display: flex;
   margin: auto;
-  width: 20%;
+  width: 80%;
   justify-content: space-between;
 }
 
 .project-links a {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   padding: 5px 30px;
   border-radius: 7px;
@@ -301,13 +315,14 @@ footer p,
   font-weight: 300;
   text-align: center;
   margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 .footer-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 30%;
+  width: 80%;
   margin: auto;
 }
 
@@ -324,4 +339,117 @@ footer p,
 
 .footer-icons a {
   text-decoration: none;
+}
+
+/* ------------------------------------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------------------------------------- */
+
+@media (min-width: 640px) {
+  .footer-icons {
+    width: 70%;
+  }
+  .nav-bar {
+    width: 90%;
+  }
+  .top-nav-item {
+    font-size: 2rem;
+  }
+  .top-nav-item:hover {
+    font-size: 2.1rem;
+  }
+  .page-title {
+    font-size: 4rem;
+  }
+  .page-role,
+  .projects-intro p,
+  .about-intro p,
+  .projects-intro p a,
+  .about-intro p a {
+    font-size: 1.4rem;
+  }
+  .project-description,
+  .about-me-description,
+  .project-techs-container,
+  .skills {
+    width: 90%;
+  }
+  .project-links {
+    width: 50%;
+  }
+  .project-links a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-icons {
+    width: 60%;
+  }
+  .nav-bar {
+    width: 80%;
+  }
+  .project-description,
+  .about-me-description,
+  .project-techs-container,
+  .skills {
+    width: 80%;
+  }
+  .project-links {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-icons {
+    width: 45%;
+  }
+  .nav-bar {
+    width: 65%;
+  }
+  .project-description,
+  .about-me-description,
+  .project-techs-container,
+  .skills {
+    width: 70%;
+  }
+  .project-links {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-icons {
+    width: 35%;
+  }
+  .nav-bar {
+    width: 55%;
+  }
+  .project-description,
+  .about-me-description,
+  .project-techs-container,
+  .skills {
+    width: 60%;
+  }
+  .project-links {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-icons {
+    width: 20%;
+  }
+  .nav-bar {
+    width: 40%;
+  }
+  .project-description,
+  .about-me-description,
+  .project-techs-container,
+  .skills {
+    width: 45%;
+  }
+  .project-links {
+    width: 20%;
+  }
 }
