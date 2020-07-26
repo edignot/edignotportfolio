@@ -19,7 +19,7 @@ const About = () => {
   `)
 
   return (
-    <Layout title="I'm Edita." role="a software engineer.">
+    <Layout title="I'm Edita." role="a software engineer." about="about">
       <SEO title="about" />
       <section className="about-intro">
         <div>

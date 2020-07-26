@@ -19,7 +19,7 @@ const Projects = () => {
   `)
 
   return (
-    <Layout title="PROJECTS">
+    <Layout title="PROJECTS" projects="projects">
       <SEO title="projects" />
       <section className="projects-intro">
         <div>
