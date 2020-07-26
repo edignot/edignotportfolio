@@ -159,12 +159,14 @@ header {
 .projects-intro h2,
 .projects-intro p,
 .about-intro h2,
-.about-intro p {
+.about-intro p,
+.skills-title {
   text-align: center;
 }
 
 .projects-intro h2,
-.about-intro h2 {
+.about-intro h2,
+.skills-title {
   font-size: 2rem;
   padding-top: 30px;
   color: var(--accent-medium);
@@ -172,7 +174,8 @@ header {
 
 .projects-intro h2:after,
 .project-title:after,
-.about-intro h2:after {
+.about-intro h2:after,
+.skills-title:after {
   content: " ";
   display: block;
   height: 2px;
