@@ -3,6 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav"
 import Img from "gatsby-image"
+import ParticleContainer from "../components/particles"
 
 const Header = ({ title, role }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +20,7 @@ const Header = ({ title, role }) => {
 
   return (
     <header>
+      <ParticleContainer size="small" />
       <div className="nav-bar">
         <Link to="/">
           <Img

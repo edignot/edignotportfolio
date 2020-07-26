@@ -82,14 +82,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
 }
 
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -110,7 +110,7 @@ header {
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--font-light);
-  border: 2px solid transparent;
+  font-weight: 300;
 }
 
 .top-nav-item:nth-child(2) {
@@ -118,9 +118,8 @@ header {
 }
 
 .top-nav-item:hover {
-  font-weight: 300;
-  font-size: 1.7rem;
-  transition: font-weight 0.1s, font-size 0.3s;
+  color: var(--accent-medium);
+  transition: color 0.2s;
 }
 
 .page-title-container {
@@ -134,6 +133,7 @@ header {
   text-align: center;
   font-weight: 300;
   color: var(--font-light);
+  opacity: 0.8;
 }
 
 .page-title {
@@ -297,7 +297,7 @@ header {
   color: var(--font-light);
   border: 1px solid var(--font-light);
   background-color: var(--accent-medium);
-  transition: color 0.5s, border 0.5s, background-color 0.5s;
+  transition: color 0.2s, border 0.2s, background-color 0.2s;
 }
 
 /* ------------------------------------------------------- */
@@ -334,7 +334,7 @@ footer p,
 
 .footer-icon:hover {
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
 }
 
 .footer-icons a {
@@ -344,11 +344,18 @@ footer p,
 /* ------------------------------------------------------- */
 /* PARTICLES ANIMATION */
 /* ------------------------------------------------------- */
-.particles-container {
+.particles-container-big {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: 998;
+}
+
+.particles-container-small {
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  z-index: 996;
 }
 
 .home {
@@ -381,13 +388,21 @@ footer p,
   padding: 20px 10px;
   width: 40%;
   text-align: center;
-  background: var(--background-light);
+  background-color: var(--background-light);
   opacity: 0.8;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .center-nav-item:nth-child(2) {
   margin-left: 50px;
+}
+
+.center-nav-item:hover {
+  background-color: var(--accent-medium);
+  color: var(--background-light);
+  border: 1px solid var(--accent-medium);
+  transition: background-color 0.2s, color 0.2s;
 }
 
 /* ------------------------------------------------------- */
@@ -400,12 +415,10 @@ footer p,
   }
   .nav-bar {
     width: 90%;
+    z-index: 997;
   }
   .top-nav-item {
     font-size: 2rem;
-  }
-  .top-nav-item:hover {
-    font-size: 2.1rem;
   }
   .page-title {
     font-size: 4rem;

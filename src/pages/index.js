@@ -8,7 +8,7 @@ const Index = () => (
   <section className="home">
     <SEO title="home" />
     <Nav position="center-nav" />
-    <ParticleContainer />
+    <ParticleContainer size="big" />
   </section>
 )
 

@@ -1,10 +1,10 @@
 import React from "react"
 import Particles from "react-particles-js"
 
-const ParticleContainer = () => {
+const ParticleContainer = ({ size }) => {
   return (
     <Particles
-      className="particles-container"
+      className={`particles-container-${size}`}
       params={{
         particles: {
           number: {
