@@ -1,10 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
 
-const Nav = ({position}) => (
+const Nav = ({ position }) => (
   <nav className={position}>
-    <Link to="/projects/">PROJECTS</Link>
-    <Link to="/about/">ABOUT</Link>
+    <Link to="/projects/" className="top-nav-item">
+      PROJECTS
+    </Link>
+    <Link to="/about/" className="top-nav-item">
+      ABOUT
+    </Link>
   </nav>
 )
 
