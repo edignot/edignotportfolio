@@ -14,9 +14,6 @@
   --accent-dark: #001936;
 }
 
-/* ------------------------------------------------------- */
-/* ALL */
-/* ------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -44,9 +41,6 @@ body {
   height: auto;
   min-height: 50vh;
 }
-/* ------------------------------------------------------- */
-/* ANIMATED BACKGROUNDS */
-/* ------------------------------------------------------- */
 
 header,
 .home {
@@ -72,9 +66,6 @@ header,
   }
 }
 
-/* ------------------------------------------------------- */
-/* HEADER */
-/* ------------------------------------------------------- */
 header {
   height: auto;
   min-height: 40vh;
@@ -100,6 +91,7 @@ header {
   filter: grayscale(100);
   border-radius: 50%;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.07);
+  z-index: 999;
 }
 
 .top-nav {
@@ -144,10 +136,6 @@ header {
 .page-role {
   font-size: 1.2rem;
 }
-
-/* ------------------------------------------------------- */
-/* INTRO */
-/* ------------------------------------------------------- */
 
 .projects-intro,
 .about-intro {
@@ -209,9 +197,6 @@ header {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
-/* ------------------------------------------------------- */
-/* PROJECTS */
-/* ------------------------------------------------------- */
 .project-info-container,
 .about-container {
   padding: 50px 50px 0px 50px;
@@ -300,9 +285,6 @@ header {
   transition: color 0.2s, border 0.2s, background-color 0.2s;
 }
 
-/* ------------------------------------------------------- */
-/* FOOTER */
-/* ------------------------------------------------------- */
 footer {
   background-color: var(--background-black);
   padding: 40px;
@@ -341,21 +323,22 @@ footer p,
   text-decoration: none;
 }
 
-/* ------------------------------------------------------- */
-/* PARTICLES ANIMATION */
-/* ------------------------------------------------------- */
+nav {
+  z-index: 999;
+}
+
 .particles-container-big {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 998;
+  z-index: 1;
 }
 
 .particles-container-small {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 40vh;
-  z-index: 996;
+  z-index: 1;
 }
 
 .home {
@@ -376,7 +359,6 @@ footer p,
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  z-index: 999;
 }
 
 .center-nav-item {
@@ -405,9 +387,21 @@ footer p,
   transition: background-color 0.2s, color 0.2s;
 }
 
-/* ------------------------------------------------------- */
-/* MEDIA QUERIES */
-/* ------------------------------------------------------- */
+.about,
+.projects {
+  color: var(--accent-medium);
+}
+
+.not-found-container {
+  min-height: 40vh;
+  display: flex;
+}
+
+.not-found-container p {
+  margin: auto;
+  color: var(--accent-medium);
+  font-size: 2rem;
+}
 
 @media (min-width: 640px) {
   .footer-icons {
@@ -415,7 +409,6 @@ footer p,
   }
   .nav-bar {
     width: 90%;
-    z-index: 997;
   }
   .top-nav-item {
     font-size: 2rem;
@@ -454,6 +447,7 @@ footer p,
   }
   .nav-bar {
     width: 80%;
+    z-index: 999;
   }
   .project-description,
   .about-me-description,

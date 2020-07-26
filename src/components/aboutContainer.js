@@ -1,13 +1,3 @@
-//   return (
-//     <section className="about-container">
-//       <article className="about-me-container">Hello</article>
-//       <article className="skills">skills</article>
-//     </section>
-//   )
-// }
-
-// export default aboutContainer
-
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
