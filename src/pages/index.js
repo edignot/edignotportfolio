@@ -9,6 +9,8 @@ const Index = () => (
     <SEO title="home" />
     <Nav position="center-nav" />
     <ParticleContainer size="big" />
+    console.log('I'm looking for my next software developer role! Please reach
+    out edignot@gmail.com')
   </section>
 )
 
