@@ -218,11 +218,15 @@ header {
   justify-content: space-between;
 }
 
-#second {
+#one,
+#three,
+#five {
   background-color: var(--background-light);
 }
 
-#first {
+#two,
+#four,
+#six {
   background-color: var(--background-white);
 }
 
