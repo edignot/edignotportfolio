@@ -231,7 +231,7 @@ header {
 }
 
 .project-img {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -273,6 +273,7 @@ header {
   margin: auto;
   width: 80%;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .project-links a {
@@ -446,6 +447,9 @@ nav {
     font-size: 2rem;
     width: 30%;
   }
+  .project-img {
+    width: 85%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -464,6 +468,9 @@ nav {
   }
   .project-links {
     width: 40%;
+  }
+  .project-img {
+    width: 80%;
   }
 }
 
@@ -486,6 +493,9 @@ nav {
   .center-nav-item {
     width: 20%;
   }
+  .project-img {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -504,6 +514,9 @@ nav {
   .project-links {
     width: 25%;
   }
+  .project-img {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -521,5 +534,8 @@ nav {
   }
   .project-links {
     width: 20%;
+  }
+  .project-img {
+    width: 50%;
   }
 }
