@@ -179,9 +179,9 @@ header {
   content: " ";
   display: block;
   height: 2px;
-  background-color: var(--accent-medium);
+  background-color: var(--accent-light);
   margin: 10px auto 30px auto;
-  width: 150px;
+  width: 50px;
 }
 
 .projects-intro p,
