@@ -32,7 +32,7 @@ const About = () => {
         <h2>When I'm not coding you'll find me hiking and taking pictures.</h2>
         <p>
           Here's a brief intro. You can find more about me on{" "}
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+          <a href="https://www.linkedin.com/in/edignot/" target="_blank">
             LinkedIn
           </a>
         </p>

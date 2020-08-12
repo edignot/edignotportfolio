@@ -15,7 +15,7 @@ const Footer = ({ siteTitle }) => (
       <a href="https://github.com/edignot" target="_blank">
         <FaGithubSquare className="footer-icon" />
       </a>
-      <a href="https://www.linkedin.com/feed/" target="_blank">
+      <a href="https://www.linkedin.com/in/edignot/" target="_blank">
         <FaLinkedin className="footer-icon" />
       </a>
       <a href="https://twitter.com/EditaIgnot" target="_blank">

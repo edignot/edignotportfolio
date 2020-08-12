@@ -11,6 +11,11 @@ const AboutContainer = () => {
         skills {
           skills
         }
+        resume {
+          file {
+            url
+          }
+        }
       }
     }
   `)
