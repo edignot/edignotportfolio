@@ -1,11 +1,11 @@
 # Edita Ignot Portfolio
+
 ## https://edignot.com/
 
-## Introduction
-This is a simple static portfolio website. Main goal of this project was to create my own responsive portfolio website. Learning goals: learn and utilize Gatsby with GraphQL, Contentful headless CMS and set up continuous deployment with Netlify.
-
-## Website Demo: 
 ![Edita Ignot Portfolio](/portfoliomockup.jpg)
+
+## About
+This is a simple static portfolio website. Main goal of this project was to create my own responsive portfolio website. Learning goals: learn and utilize Gatsby with GraphQL, Contentful headless CMS and set up continuous deployment with Netlify.
 
 ## Tech Stack:
 - Gatsby
@@ -26,6 +26,6 @@ First you'll need these installed:
 - gatsby build
 
 ## Contributors:
-   [Edita Ignot](https://github.com/edignot)
+- [Edita Ignot](https://github.com/edignot)
 
 
