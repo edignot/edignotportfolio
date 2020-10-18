@@ -15,7 +15,7 @@ This is a simple static portfolio website. Main goal of this project was to crea
 - Contentful CMS
 - GraphQL
 - Webpack
-- Netlify CD
+- Netlify
 
 ## Development Instructions:
 First you'll need these installed:
